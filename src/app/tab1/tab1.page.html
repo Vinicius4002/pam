@@ -1,17 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      PAM - II
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+    <ion-item-sliding>
+
+    <ion-item >
+      <ion-thumbnail slot="start">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8L4Mep3KDUK4ztUgf2HlPvUVzZy.jpg">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <h3>Velozes & Furiosos 9 </h3>
+        <p>24/06/2021</p>
+        <p>2h 25m</p>
+        <p>Ação, Crime, Thriller</p>
+      </ion-label >
+      <ion-chip color="tertiary" outline>
+        <ion-label>78%</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="nota()">
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="curtir()">
+        <ion-icon slot="icon-only" name="thumbs-up-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item-sliding>
+
+    <ion-item >
+      <ion-thumbnail slot="start">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rKq1Vlw0Bqe2EEvdmIkkkgPQAGf.jpg">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <h3>Viúva Negra</h3>
+        <p>08/07/2021</p>
+        <p>2h 13m</p>
+        <p>Ação, Aventura, Thriller, Ficção científica</p>
+      </ion-label >
+      <ion-chip color="tertiary" outline>
+        <ion-label>80%</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="nota()">
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-item-option>
+      <ion-item-option (click)="curtir()">
+        <ion-icon slot="icon-only" name="thumbs-up-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  </ion-list>
+
+
 </ion-content>
+
